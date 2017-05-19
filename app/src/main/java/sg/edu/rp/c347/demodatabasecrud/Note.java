@@ -1,10 +1,12 @@
 package sg.edu.rp.c347.demodatabasecrud;
 
+import java.io.Serializable;
+
 /**
  * Created by 15017199 on 19/5/2017.
  */
 
-public class Note {
+public class Note implements Serializable {
     private int id;
     private String noteContent;
 
@@ -21,4 +23,7 @@ public class Note {
         return noteContent;
     }
 
+    public void setNoteContent(String noteContent) {
+        this.noteContent = noteContent;
+    }
 }
